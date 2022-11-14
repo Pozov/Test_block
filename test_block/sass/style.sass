@@ -1,0 +1,374 @@
+body 
+    margin: 0
+    font-family: 'Ubuntu', sans-serif
+    font-size: 15px
+    line-height: 1.6
+    color: #333
+
+*
+    box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6
+    margin: 0
+
+ul, li 
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+span
+    font-size: 96px
+    color: #7B4451
+
+    // Container
+.container 
+    width: 100%
+    max-width: 1240px
+    margin: 0 auto
+
+    //Header
+.header
+    text-align: center
+    padding: 40px 0px 50px
+    .header__title
+        display: block
+        font-family: 'Playfair Display', serif
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        color: #7B4451
+        margin-bottom: 50px
+    .header__media
+        display: none
+        font-family: 'Playfair Display', serif
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+        .media__one
+            font-family: 'Playfair Display'
+            font-style: normal
+            font-weight: 400
+            font-size: 96px
+            color: #7B4451
+            
+            
+    //Info
+.info__money
+   position: absolute
+   display: block
+   margin: 0 auto
+   left: 50%
+   transform: translateX(-50%)
+   top: -74px
+
+.info
+    display: flex
+    width: 100%
+    height: 223px
+    align-items: stretch
+    justify-content: space-between
+    border-top: 0.3px solid #000000
+    border-bottom: 0.3px solid #000000
+
+    .info__card
+        position: relative
+        flex: 1
+        text-align: center
+        padding: 50px 59px
+        z-index: 100
+
+    .info__title
+        font-family: 'Playfair Display', serif
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 32px
+        color: #7B4451
+        margin-bottom: 16px
+            
+    .info__text
+        font-family: 'Ubuntu', sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 140%
+        padding-bottom: 50px
+    .info__img
+        position: absolute
+        z-index: -10
+        left: 50%
+        transform: translateX(-50%)
+    .info__img_1
+        bottom: -81px
+    .info__img_2
+        display: block
+        left: 50%
+        bottom: -116px
+    .info__img_3
+        left: 50%
+        bottom: -79px
+
+    // Arrow
+.arrow
+    position: relative
+    display: block
+    margin: 80px auto
+    z-index: 10
+
+    // Discount
+.discount
+    max-width: 600px
+    height: 381px
+    margin: -120px auto 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: url(/assets/images/discount.png)
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    span
+        display: block
+
+.discount__title
+    font-family: 'Playfair Display', serif
+    font-style: normal
+    font-weight: 700
+    font-size: 48px
+    color: #7B4451
+
+    // Block
+.block
+    margin: 0 48px
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+
+    .block__card
+        width: 545px
+        height: auto
+        border: 1px solid #E1E1E1
+        border-radius: 7px
+        background: #FFF
+
+    .block__info
+        padding: 50px 50px
+        
+    .block__card_gray
+        background: #FAFAFA
+        display: block
+
+    .block__card_white
+    
+
+    .card__title
+        font-family: 'Playfair Display', serif
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        text-align: center
+
+    .card__title_fatty
+        font-weight: 700
+        
+    .card__text
+        display: inline-flex
+        gap: 24px
+        align-items: center
+        flex-direction: row-reverse
+        font-family: 'Ubuntu', sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 140%
+        padding-top: 24px
+    .card__text_minus
+        &:after
+            content: "-"
+            font-size: 36px
+            color: #C90000
+    .card__text_plus
+        &:after
+            content: "+"
+            font-size: 36px
+            font-weight: bold
+            font-family: courier
+            color: #27C200
+
+    // Footer
+.footer
+    display: flex
+    flex-wrap: wrap
+    border: 0.5px solid #7B4451
+    margin: 120px auto 0 auto
+    max-width: 1110px
+    border-radius: 7px
+    justify-content: space-between
+    &__img
+        display: block
+    
+
+.footer__col_first
+    width: 60%
+    display: flex
+.footer__col_second
+    width: 30%
+
+.footer__info
+    padding-top: 72px
+
+
+.footer__title
+    font-family: 'Playfair Display'
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 130%
+    color: #7B4451
+
+.footer__text
+    font-family: 'Ubuntu'
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 140%
+    padding-top: 16px
+
+.footer__tel
+        padding: 72px 29px 0px 0px
+        display: flex
+        align-content: center
+        flex-wrap: wrap
+        justify-content: center
+
+.footer__input
+    padding: 10px 80px
+    background: #FFF8F1
+    border: 0.5px solid #BDBDBD
+    border-radius: 3px
+    margin-bottom: 16px
+    text-align: center
+
+.footer__btn
+    width: 260px
+    height: 51px
+    background: linear-gradient(180deg, #BB6D7F -43.36%, #9A3950 100%)
+    border-radius: 1em/3em
+    border: none
+    box-shadow: 0px 6px 4px -5px
+    .btn__text
+        font-family: 'Ubuntu'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        white-space: nowrap
+        color: #FFF
+
+.footer__btn_plus
+    display: none
+    margin: 24px auto 0 auto
+    width: 340px
+    height: 50px 
+    background: #7B4451
+    border-radius: 5px
+    border: none
+    .btn__text
+        font-family: 'Ubuntu'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        white-space: nowrap
+        color: #FFF
+
+@media (max-width: 1103px)
+    .header
+        .header__title
+            font-size: 40px
+
+    .info__card
+        .info__title
+            font-size: 20px
+        .info__text
+            font-size: 18px
+
+@media (max-width: 978px)
+    .container
+        max-width: 95%
+    
+
+    .header
+        padding: 40px 0px 0px
+        .header__title
+            display: none
+            font-size: 40px
+            margin-bottom: auto
+        .header__media
+            display: flex
+            max-width: 307px
+            margin: 0 auto
+       
+    .info
+        flex-direction: column
+        height: auto
+        align-items: center
+        border: none
+        .info__card
+            max-width: 400px
+            padding: 108px 30px
+            border: 1px solid rgba(123, 68, 81, 0.2)
+            border-radius: 7px
+            margin: 50px auto
+            height: 340px
+            &__title
+                font-size: 24px
+            &__text
+                font-size: 16px
+            .info__img_1
+                bottom: 0
+                top: -16px
+            .info__img_2
+                display: none
+                
+            .info__img_3
+                bottom: 0
+                top: -22px
+    .arrow
+        display: none
+
+    .discount
+        margin: 0 auto
+
+    .block
+        max-width: 480px
+        margin: 0 auto
+        .block__card_gray
+            display: none
+        .card__text
+            flex-direction: column-reverse
+            text-align: center
+    .footer__btn_plus
+        display: block
+    .footer
+        max-width: 480px
+        height: 386px
+        background-image: url(/assets/images/footermedia.png)
+        border: none
+        &__col_first
+            width: auto
+        &__col_second
+            width: auto
+        &__info
+            text-align: center
+        &__tel
+            padding: inherit
+        
+        
+        &__img
+            display: none
+
+@media (max-width: 540px)
+    .container
+        width: 100%
+        max-width: 540px
+
